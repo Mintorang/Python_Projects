@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+   <body>
+      <head>
+         <title>HTML Forms</title>
+      </head>
+      <p>Add your details:</p>
+      <form>
+         Name:<br> <input type="text" id="name">
+         <button onclick="name()">Submit</button>
+         <br>
+         Age:<br> <input type="text" id="age">
+         <button onclick="age()">Submit</button>
+         <br>
+         Phone Number:<br> <input type="text" id="number">
+         <button onclick="test()">Submit</button>
+      </form>4
+      
+      
+      
+      <!-- add this line for function to write into -->
+      <p id="demo"></p>   
+      <p id="demo1" ></p>
+      <p id="demo2"></p>
+      <script type="text/javascript">
+      
+      function test(){
+
+
+         var number = document.getElementById("number").value;
+         document.getElementById("demo").innerHTML = number;
+         
+      }
+      function name(){
+         var name = document.getElementById("name").value;
+         document.getElementById("demo1").innerHTML = name;
+         
+      }
+      function age(){
+         var window.age = document.getElementById("age").value;
+         document.getElementById("demo2").innerHTML = age;
+         
+
+      }
+      </script>
+   </body>
+</html>

@@ -4,27 +4,14 @@ views = Blueprint(__name__, "views")
 
 @views.route("/")
 def home_():
-    return """
-    Thank You For Going onto 127.0.1:8000
-
-    Have A Good Time. 
+    return render_template("home.html")
     
-    Thank You!
-    
-    
-    """
-    return render_template("index.html", name="Moyo Ehindero")
 
 
-@views.route("/profile/<username>")
-def profile_username(username):
-
-
-    return render_template("index.html", name=username)
 
 @views.route("/profile")
 def profile():
-    return "Please enter your username after the slash after profile example: /profile/exampleusername"
+    return render_template("profile.html")
 @views.route("/json")
 def get_json():
     return jsonify({

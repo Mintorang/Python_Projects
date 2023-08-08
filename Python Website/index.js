@@ -1,0 +1,1 @@
+var window,abes = 90;
