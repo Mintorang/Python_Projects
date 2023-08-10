@@ -1,4 +1,4 @@
-"""
+
 import random
 
 ASK = [True, False]
@@ -22,4 +22,3 @@ while active:
         print(message)
     
 
-"""

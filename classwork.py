@@ -30,11 +30,11 @@ while True:
         print(f"{ask} is not coming to the party.")
     else:
         accepted.append(ask)
-        print(f"{ask} is comong to the party")
+        print(f"{ask} is coming to the party")
         print(accepted)
     counter += 1
     if counter == len(list):
         break    
-    print(f"Here are the people that are not coming to the party:  {accepted}")
+    print(f"Here are the people that are coming to the party:  {accepted}")
     for key in guest :
         print(key, '->', guest[key])
