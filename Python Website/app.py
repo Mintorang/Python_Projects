@@ -1,17 +1,3 @@
-# from flask import Flask
-# from views import views
-
-# app = Flask(__name__)
-# #this is a blueprint
-# app.register_blueprint(views, url_prefix="/")
-
-
-
-
-
-# if __name__ == "__main__":
-#     app.run(debug=True, port=8000)
-
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -19,9 +5,16 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template('index.html')
-@app.route("/form")
+@app.route("/Form")
 def form():
     return render_template("Forms.html")
+@app.route("/home")
+def home():
+    return render_template("home.html")
+
+@app.route("/profile")
+def profile():
+    return render_template("profile.html")
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)

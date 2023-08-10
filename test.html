@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="loginInfo"> <!-- Corrected typo: changed "loginiInfo" to "loginInfo" -->
+      Name:<br />
+      <input type="text" id="name" placeholder="Name" />
+      <button type="button" onclick="loginButtonClick()">Submit</button> <!-- Added type attribute "button" to prevent form submission -->
+    </form>
+
+    <p id="here"></p>
+    <script>
+      function loginButtonClick() {
+        var username = document.getElementById("name").value; // Changed the way of getting the value
+        document.getElementById("here").innerHTML = "Name: " + username;
+      }
+    </script>
+  </body>
+</html>

@@ -1,11 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <style>
+        body {
+            background-image: url("https://static.vecteezy.com/system/resources/previews/006/852/804/original/abstract-blue-background-simple-design-for-your-website-free-vector.jpg");
+
+        }
+
+        a {
+            color: rgba(255, 255, 0, 0.932);
+
+
+        }
+
+        p {
+            color: rgb(255, 255, 0);
+            text-align: center;
+            margin: auto;
+            width: 640px;
+            padding: 50px;
+            font-family: 'Lexend Deca', sans-serif;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        h1 {
+            font-size: 70px;
+            font-weight: 600;
+            background-image: linear-gradient(to left, #0ee419, #7007d9);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+
+        img {
+            border-radius: 15px 50px;
+            background: #73AD21;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+            text-align: right;
+        }
+
+        p {
+            text-align: center;
+            font: initial;
+        }
+    </style>
+    <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 </head>
+
 <body>
-    <h1>Home</h1>
+    <h1 class="title">Home</h1>
+    <a id="links" href={{url_for("form")}}>Forms</a>
+    <a id="links" href={{url_for("profile")}}>Profile</a>
+    <p>Moyo: A Journey of Curiosity and Innovation
+
+        In a world fueled by technology, where innovation paves the way for progress, there exists a name that stands
+        out amidst the digital landscape – Moyo. With an insatiable curiosity and a heart brimming with passion, Moyo's
+        journey has been one defined by a relentless pursuit of knowledge and a commitment to driving meaningful change.
+
+        From his earliest encounters with the realm of information technology, Moyo's fascination was ignited. With
+        every line of code deciphered and each intricate system understood, his connection to the digital world
+        deepened. This bond, forged by a natural aptitude for complex problem-solving, laid the foundation for a
+        remarkable career in the tech industry.
+
+        Beyond the realm of technology, Moyo's impact reverberates in his role as a mentor and collaborator. A true
+        visionary, he understands that the greatest advancements often arise from the collective brilliance of diverse
+        minds. His leadership is marked by humility and a deep respect for the ideas of others, fostering an environment
+        where innovation thrives and individuals flourish.
+
+        Moyo's journey is not solely confined to technical expertise; it extends to a profound belief in the potential
+        of technology to effect positive change. Through initiatives that harness the power of IT for social good, Moyo
+        envisions a world where technology transcends its functional role and becomes a force for societal upliftment.
+
+        In essence, Moyo's story is one of boundless curiosity, technical acumen, and a dedication to using his skills
+        for the betterment of both the digital landscape and the global community. As we navigate the ever-evolving
+        digital frontier, Moyo's journey remains an inspiring testament to the transformative power of knowledge,
+        innovation, and a heart that beats to the rhythm of progress.</p>
+
+
+    <script>
+
+
+
+        let username = localStorage.getItem("username");
+        console.log(username);
+        let number = localStorage.getItem("number");
+        console.log(number)
+        let age = localStorage.getItem("age");
+        console.log(age)
+
+    </script>
 </body>
+
 </html>

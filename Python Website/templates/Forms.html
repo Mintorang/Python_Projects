@@ -1,47 +1,111 @@
 <!DOCTYPE html>
 <html>
-   <body>
-      <head>
-         <title>HTML Forms</title>
-      </head>
-      <p>Add your details:</p>
-      <form>
-         Name:<br> <input type="text" id="name">
-         <button onclick="name()">Submit</button>
-         <br>
-         Age:<br> <input type="text" id="age">
-         <button onclick="age()">Submit</button>
-         <br>
-         Phone Number:<br> <input type="text" id="number">
-         <button onclick="test()">Submit</button>
-      </form>4
-      
-      
-      
-      <!-- add this line for function to write into -->
-      <p id="demo"></p>   
-      <p id="demo1" ></p>
-      <p id="demo2"></p>
-      <script type="text/javascript">
-      
-      function test(){
+
+<head>
+  <title>HTML Forms</title>
+  <style>
+    body {
+      background-image: url("https://static.vecteezy.com/system/resources/previews/006/852/804/original/abstract-blue-background-simple-design-for-your-website-free-vector.jpg");
+
+    }
+
+    a {
+      color: rgba(255, 255, 0, 0.932);
 
 
-         var number = document.getElementById("number").value;
-         document.getElementById("demo").innerHTML = number;
-         
-      }
-      function name(){
-         var name = document.getElementById("name").value;
-         document.getElementById("demo1").innerHTML = name;
-         
-      }
-      function age(){
-         var age = document.getElementById("age").value;
-         document.getElementById("demo2").innerHTML = age;
-         
+    }
+
+    p {
+      color: rgb(255, 255, 0);
+      text-align: center;
+      margin: auto;
+      width: 640px;
+      padding: 50px;
+      font-family: 'Lexend Deca', sans-serif;
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    button {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 70px;
+      font-weight: 600;
+      background-image: linear-gradient(to left, #0ee419, #7007d9);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+
+    img {
+      border-radius: 15px 50px;
+      background: #73AD21;
+      padding: 20px;
+      width: 200px;
+      height: 150px;
+      text-align: right;
+    }
+
+    p {
+      text-align: center;
+      font: initial;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+  <h3>Links</h3>
+  <a id="links" href={{url_for("home")}}>Home Page</a>
+  <a id="links" href={{url_for("profile")}}>Profile</a>
+
+  <form action="">
+    <p>Add your details:</p>
+    <form id="loginInfo">
+      Name:<br />
+      <input type="text" id="name" placeholder="Name" />
+
+
+
+      <br>
+      Phone Number:<br> <input type="text" id="number" placeholder="Number">
+      <br>
+
+      Age:<br> <input type="text" id="age" placeholder="Age">
+      <br> <br> <button type="button" onclick="displayAge(), displayName(), displayNumber()">Submit</button>
+    </form>
+
+
+
+    <script>
+
+      var name, age, number;
+
+      function displayName() {
+        name = document.getElementById("name").value;
+        console.log(name)
 
       }
-      </script>
-   </body>
+      function displayNumber() {
+        number = document.getElementById("number").value;
+        console.log(number)
+      }
+      function displayAge() {
+        age = document.getElementById("age").value;
+        console.log(age)
+      }
+
+
+      localStorage.setItem("username", `${name}`);
+      localStorage.setItem("number", `${number}`);
+      localStorage.setItem("age", `${age}`);
+
+
+
+
+    </script>
+</body>
+
 </html>
