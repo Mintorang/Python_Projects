@@ -61,6 +61,7 @@
   <a id="links" href={{url_for("home")}}>Home Page</a>
   <a id="links" href={{url_for("profile")}}>Profile</a>
 
+  
   <form action="">
     <p>Add your details:</p>
     <form id="loginInfo">
@@ -74,15 +75,22 @@
       <br>
 
       Age:<br> <input type="text" id="age" placeholder="Age">
-      <br> <br> <button type="button" onclick="displayAge(), displayName(), displayNumber()">Submit</button>
+      <audio id="ID004" source src="audio_file.mp3"></audio>
+      <br> <br> <button type="button" onclick="displayAge(), displayName(), displayNumber(), playAudio('ID004') ">Submit</button>
     </form>
 
+     
+    
 
 
     <script>
 
-      var name, age, number;
 
+      var name, age, number;
+      function playAudio(audio_element) {
+        var x = document.getElementById(audio_element);
+        x.play();
+      }
       function displayName() {
         name = document.getElementById("name").value;
         console.log(name)
@@ -101,11 +109,9 @@
       localStorage.setItem("username", `${name}`);
       localStorage.setItem("number", `${number}`);
       localStorage.setItem("age", `${age}`);
-
-
-
-
     </script>
+
+
 </body>
 
 </html>
