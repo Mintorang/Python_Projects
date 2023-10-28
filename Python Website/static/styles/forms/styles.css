@@ -1,0 +1,70 @@
+body {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/006/852/804/original/abstract-blue-background-simple-design-for-your-website-free-vector.jpg");
+
+}
+
+a {
+    color: rgba(255, 255, 0, 0.932);
+
+
+}
+
+p {
+    color: rgb(255, 255, 0);
+    text-align: center;
+    margin: auto;
+    width: 640px;
+    padding: 50px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+button {
+    text-align: center;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #0ee419, #000000);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+img {
+    border-radius: 15px 50px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    text-align: right;
+}
+
+p {
+    text-align: center;
+    font: initial;
+}
+
+.input {
+    border: 3px solid rgb(152, 129, 129);
+    border-radius: 6px;
+    width: 400px;
+    margin: 13px;
+}
+h1  {
+    color: rgb(19, 199, 226);
+    font-size: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    text-decoration: wavy;
+}
+
+.submit_button {
+    border: 3px solid rgb(152, 129, 129);
+    border-radius: 10px;
+    font: 200;
+    font-weight: 300;
+    
+}
