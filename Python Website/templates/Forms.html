@@ -51,6 +51,7 @@
     var name, age, number, country;
     function displayName() {
       name = document.getElementById("name").value;
+      localStorage.setItem("name", name);
       console.log(name)
 
     }
