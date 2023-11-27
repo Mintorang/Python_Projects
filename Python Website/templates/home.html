@@ -17,42 +17,43 @@
     <h1 class="title">Home</h1>
     <a id="links" href={{url_for("form")}}>Forms</a>
     <a id="links" href={{url_for("profile")}}>Profile</a>
-    <p>Moyo: A Journey of Curiosity and Innovation
+    <p><span id="name_time"></span>: A Journey of Curiosity and Innovation
 
         In a world fueled by technology, where innovation paves the way for progress, there exists a name that stands
-        out amidst the digital landscape – Moyo. With an insatiable curiosity and a heart brimming with passion, Moyo's
+        out amidst the digital landscape – <span id="name_time"></span>. With an insatiable curiosity and a heart brimming with passion, Moyo's
         journey has been one defined by a relentless pursuit of knowledge and a commitment to driving meaningful change.
 
-        From his earliest encounters with the realm of information technology, Moyo's fascination was ignited. With
+        From his earliest encounters with the realm of information technology, <span id="name_time"></span>'s fascination was ignited. With
         every line of code deciphered and each intricate system understood, his connection to the digital world
         deepened. This bond, forged by a natural aptitude for complex problem-solving, laid the foundation for a
         remarkable career in the tech industry.
 
-        Beyond the realm of technology, Moyo's impact reverberates in his role as a mentor and collaborator. A true
+        Beyond the realm of technology, <span id="name_time"></span>'s impact reverberates in his role as a mentor and collaborator. A true
         visionary, he understands that the greatest advancements often arise from the collective brilliance of diverse
         minds. His leadership is marked by humility and a deep respect for the ideas of others, fostering an environment
         where innovation thrives and individuals flourish.
 
-        Moyo's journey is not solely confined to technical expertise; it extends to a profound belief in the potential
+        <span id="name_time"></span>'s journey is not solely confined to technical expertise; it extends to a profound belief in the potential
         of technology to effect positive change. Through initiatives that harness the power of IT for social good, Moyo
         envisions a world where technology transcends its functional role and becomes a force for societal upliftment.
 
-        In essence, Moyo's story is one of boundless curiosity, technical acumen, and a dedication to using his skills
+        In essence, <span id="name_time"></span>'s story is one of boundless curiosity, technical acumen, and a dedication to using his skills
         for the betterment of both the digital landscape and the global community. As we navigate the ever-evolving
-        digital frontier, Moyo's journey remains an inspiring testament to the transformative power of knowledge,
+        digital frontier, <span id="name_time"></span>'s journey remains an inspiring testament to the transformative power of knowledge,
         innovation, and a heart that beats to the rhythm of progress.</p>
 
 
     <script>
 
 
-
+        
         let username = localStorage.getItem("username");
         console.log(username);
         let number = localStorage.getItem("number");
         console.log(number)
         let age = localStorage.getItem("age");
         console.log(age)
+        document.getElementById("name_time").innerHTML = username;
 
     </script>
 </body>

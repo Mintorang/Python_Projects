@@ -11,19 +11,22 @@ Password = input('Enter your email account password:  ')
 Subject = "This is an automated email"
 Body = "Template"
 Message = f'Subject: {Subject}\n\n{Body}'
-
+counter = 0
+while True:
 # Use smtplib to send the email through Gmail
 # Line 14 specifies the SMTP server (for Gmail) and the port number (587).
-with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
-    # Authenticate with Gmail using the provided email and password
-    # Then send the email with the sender's email, recipient's email, and the composed message (subject and body)
-    smtp.ehlo()
-    smtp.starttls()
-    smtp.ehlo()
-    smtp.login(Sender_Email, Password)
-    smtp.sendmail(Sender_Email, Reciever_Email, Message)
+    with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
+        # Authenticate with Gmail using the provided email and password
+        # Then send the email with the sender's email, recipient's email, and the composed message (subject and body)
+        smtp.ehlo()
+        smtp.starttls()
+        smtp.ehlo()
+        smtp.login(Sender_Email, Password)
+        smtp.sendmail(Sender_Email, Reciever_Email, Message)
 
-    # Print a confirmation message
-    print("Done!")
+        # Print a confirmation message
+        print("Done!")
+        counter += 1
+        print(counter)
 
-# End of the script
+    # End of the script
