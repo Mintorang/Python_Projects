@@ -5,5 +5,13 @@ if you want to have a further look at this code or remix it. Please follow these
   1. Create a new directory for the code to be in and cd into that directory
        ```python
        mkdir Python_Projects
-       cd Python_projects
-  2. Initialiase a Git repository in the directory and 
+       cd Python_Projects
+  2. Initialiase a Git repository in the directory
+       ```python
+       git init
+
+  3. Clone this repisitory into the git branch
+       ```python
+       git clone https://github.com/Mintorang/Python_Projects.git
+Have fun with the ciode.
+    
