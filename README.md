@@ -10,8 +10,9 @@ if you want to have a further look at this code or remix it. Please follow these
        ```python
        git init
 
-  3. Clone this repisitory into the git branch
+  3. Clone this repisitory into the git branch, and cd into the code.
        ```python
        git clone https://github.com/Mintorang/Python_Projects.git
+       cd Python_Projects
 Have fun with the ciode.
     
